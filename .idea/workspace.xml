@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d754eddd-4392-4a62-b3d4-bad3756550e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confirmOrderDescription.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/你好商城订单.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/credit_log.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/【ID1000146】 商户端添加订单功能迭代" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/你好商城订单.md" beforeDir="false" afterPath="$PROJECT_DIR$/你好商城订单.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/confirmOrderDescription.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="18" selection-start-column="18" selection-end-column="18" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="109" selection-start-line="5" selection-end-line="5" selection-end-column="109" />
               </first_editor>
               <second_editor />
             </state>
@@ -30,8 +31,44 @@
         <entry file="file://$PROJECT_DIR$/你好商城订单.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1080">
-                <caret line="72" column="59" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="72" selection-end-column="59" />
+              <first_editor relative-caret-position="525">
+                <caret line="287" column="2" selection-start-line="287" selection-start-column="2" selection-end-line="287" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/【ID1000146】 商户端添加订单功能迭代">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/credit_log.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="480">
+                <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniprogram.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -47,13 +84,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/confirmOrderDescription.md" />
+        <option value="$PROJECT_DIR$/【ID1000146】 商户端添加订单功能迭代" />
+        <option value="$PROJECT_DIR$/credit_log.md" />
+        <option value="$PROJECT_DIR$/miniprogram.md" />
         <option value="$PROJECT_DIR$/你好商城订单.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="77" />
-    <option name="y" value="38" />
+    <option name="x" value="1997" />
+    <option name="y" value="54" />
     <option name="width" value="1843" />
     <option name="height" value="992" />
   </component>
@@ -61,26 +101,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="remarks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="remarks" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558439398447" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560426088575" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -111,18 +138,38 @@
       <workItem from="1558341784250" duration="596000" />
       <workItem from="1558403008248" duration="2864000" />
       <workItem from="1558439424324" duration="16000" />
-      <workItem from="1558492744809" duration="3777000" />
+      <workItem from="1558492744809" duration="6073000" />
+      <workItem from="1558578011031" duration="3081000" />
+      <workItem from="1558681792299" duration="4113000" />
+      <workItem from="1559024561966" duration="847000" />
+      <workItem from="1559097375809" duration="5979000" />
+      <workItem from="1559182827594" duration="5554000" />
+      <workItem from="1559287437593" duration="1461000" />
+      <workItem from="1559292869683" duration="599000" />
+      <workItem from="1559468580845" duration="717000" />
+      <workItem from="1559474618776" duration="659000" />
+      <workItem from="1559487010105" duration="3115000" />
+      <workItem from="1559558762219" duration="866000" />
+      <workItem from="1559614300052" duration="7945000" />
+      <workItem from="1559731723684" duration="1721000" />
+      <workItem from="1560145019866" duration="2515000" />
+      <workItem from="1560410623544" duration="683000" />
+      <workItem from="1560479605871" duration="4915000" />
+      <workItem from="1560754591243" duration="597000" />
+      <workItem from="1560835336968" duration="2204000" />
+      <workItem from="1560924078638" duration="1418000" />
+      <workItem from="1561011838523" duration="640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7952000" />
+    <option name="totallyTimeSpent" value="59877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24542937" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25896862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -138,7 +185,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31135136" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.11344538" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -167,8 +214,38 @@
     <entry file="file://$PROJECT_DIR$/confirmOrderDescription.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="109" selection-start-line="5" selection-end-line="5" selection-end-column="109" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/【ID1000146】 商户端添加订单功能迭代">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/credit_log.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="480">
+            <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -177,8 +254,8 @@
     <entry file="file://$PROJECT_DIR$/你好商城订单.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1080">
-            <caret line="72" column="59" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="72" selection-end-column="59" />
+          <first_editor relative-caret-position="525">
+            <caret line="287" column="2" selection-start-line="287" selection-start-column="2" selection-end-line="287" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
