@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d754eddd-4392-4a62-b3d4-bad3756550e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/credit_log.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/【ID1000146】 商户端添加订单功能迭代" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/你好商城订单.md" beforeDir="false" afterPath="$PROJECT_DIR$/你好商城订单.md" afterDir="false" />
     </list>
@@ -31,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/你好商城订单.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="525">
-                <caret line="287" column="2" selection-start-line="287" selection-start-column="2" selection-end-line="287" selection-end-column="2" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -158,12 +156,13 @@
       <workItem from="1560754591243" duration="597000" />
       <workItem from="1560835336968" duration="2204000" />
       <workItem from="1560924078638" duration="1418000" />
-      <workItem from="1561011838523" duration="640000" />
+      <workItem from="1561011838523" duration="2528000" />
+      <workItem from="1561083048147" duration="629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59877000" />
+    <option name="totallyTimeSpent" value="62394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
@@ -185,7 +184,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.11344538" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25945377" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -254,8 +253,8 @@
     <entry file="file://$PROJECT_DIR$/你好商城订单.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="525">
-            <caret line="287" column="2" selection-start-line="287" selection-start-column="2" selection-end-line="287" selection-end-column="2" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           </first_editor>
           <second_editor />
         </state>
