@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d754eddd-4392-4a62-b3d4-bad3756550e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/你好商城订单.md" beforeDir="false" afterPath="$PROJECT_DIR$/你好商城订单.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/你好商城订单.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <first_editor relative-caret-position="263">
+                <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
@@ -90,10 +89,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1997" />
-    <option name="y" value="54" />
-    <option name="width" value="1843" />
-    <option name="height" value="992" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -157,16 +156,16 @@
       <workItem from="1560835336968" duration="2204000" />
       <workItem from="1560924078638" duration="1418000" />
       <workItem from="1561011838523" duration="2528000" />
-      <workItem from="1561083048147" duration="629000" />
+      <workItem from="1561083048147" duration="1547000" />
+      <workItem from="1561192856750" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62394000" />
+    <option name="totallyTimeSpent" value="63558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25896862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -184,7 +183,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25945377" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25945947" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -253,8 +252,8 @@
     <entry file="file://$PROJECT_DIR$/你好商城订单.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <first_editor relative-caret-position="263">
+            <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
