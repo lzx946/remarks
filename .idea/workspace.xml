@@ -19,12 +19,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
-  </component>
+  <component name="ProjectId" id="1OodYkeEN31r0ANC38nkeZPuOkX" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -104,6 +99,7 @@
       <workItem from="1563439196642" duration="1956000" />
       <workItem from="1563764095782" duration="649000" />
       <workItem from="1563787049499" duration="142000" />
+      <workItem from="1564647934458" duration="251000" />
     </task>
     <servers />
   </component>
@@ -115,7 +111,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
