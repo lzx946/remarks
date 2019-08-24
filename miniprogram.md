@@ -35,4 +35,13 @@ CREATE TABLE `activity_file` (
 
 ```sql
 ALTER TABLE train.activity MODIFY COLUMN `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '发布时间';
+
+ALTER TABLE train.activity DROP COLUMN activity_image;
+
+ALTER TABLE train.activity DROP COLUMN video;
+
+ALTER TABLE train.activity DROP COLUMN cover_picture;
+
+ALTER TABLE train.activity DROP COLUMN file;
+
 ```
