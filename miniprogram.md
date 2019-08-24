@@ -29,6 +29,19 @@ CREATE TABLE `activity_file` (
   `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`file_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动文件表';
+
+CREATE TABLE `activity_file_finish_log` (
+  `finish_log_id` varchar(20) NOT NULL COMMENT '完成记录ID',
+  `file_id` varchar(20) NOT NULL COMMENT '文件ID',
+  `member_id` varchar(20) NOT NULL COMMENT '会员ID',
+  `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
+  `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
+  `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  PRIMARY KEY (`finish_log_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动文件完成记录表';
+
 ```
 
 ### 修改字段
