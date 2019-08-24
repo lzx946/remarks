@@ -90,4 +90,8 @@ ALTER TABLE dynamic MODIFY COLUMN `clock_time` TIMESTAMP NOT NULL DEFAULT CURREN
 
 ALTER TABLE dynamic ADD COLUMN `useful` varchar(2) NOT NULL DEFAULT '0' COMMENT '是否有效0=否，1=是';
 
+ALTER TABLE dynamic DROP COLUMN `image`;
+
+ALTER TABLE dynamic DROP COLUMN `audio`;
+
 ```
