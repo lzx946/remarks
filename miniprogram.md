@@ -30,3 +30,9 @@ CREATE TABLE `activity_file` (
   PRIMARY KEY (`file_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动文件表';
 ```
+
+### 修改字段
+
+```sql
+ALTER TABLE train.activity MODIFY COLUMN `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '发布时间';
+```
