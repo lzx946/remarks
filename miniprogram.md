@@ -18,15 +18,16 @@ INSERT INTO cloud_train.user_role (id,user_id,role_id,del_flag,create_date) VALU
 ```sql
 CREATE TABLE `activity_file` (
   `file_id` varchar(20) NOT NULL COMMENT '文件表ID',
-	`activity_id` varchar(20) NOT NULL COMMENT '活动ID',
+  `activity_id` varchar(20) NOT NULL COMMENT '活动ID',
   `file_name` varchar(255) NOT NULL COMMENT '文件名',
-	`file_type` varchar(5) NOT NULL COMMENT '活动文件类型,对应ActivityFileEnum类',
+  `file_type` varchar(5) NOT NULL COMMENT '活动文件类型,对应ActivityFileEnum类',
   `url` varchar(255) NOT NULL COMMENT '文件url',
+  `finished` varchar(2) NOT NULL COMMENT '是否完成0=否，1=是',
   `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
-	`create_id` varchar(20) NOT NULL COMMENT '创建人ID',
-  `create_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-	`modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
-	`modify_date` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
+  `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`file_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动文件表';
 ```
