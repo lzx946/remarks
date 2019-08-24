@@ -42,6 +42,20 @@ CREATE TABLE `activity_file_finish_log` (
   PRIMARY KEY (`finish_log_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动文件完成记录表';
 
+CREATE TABLE `dynamic_file` (
+  `file_id` varchar(20) NOT NULL COMMENT '活动动态信息文件id（评论/打卡信息文件id）',
+  `dynamic_id` varchar(20) NOT NULL COMMENT '活动动态信息id',
+  `file_name` varchar(50) DEFAULT NULL COMMENT '文件名',
+  `url` varchar(255) NOT NULL COMMENT '文件url',
+  `file_type` varchar(5) NOT NULL COMMENT '文件类型，（DynamicFileTypeEnum）',
+  `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
+  `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
+  `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  PRIMARY KEY (`file_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动动态信息相关文件表（评论/打卡信息文件表）';
+
 ```
 
 ### 修改字段
@@ -56,5 +70,9 @@ ALTER TABLE train.activity DROP COLUMN video;
 ALTER TABLE train.activity DROP COLUMN cover_picture;
 
 ALTER TABLE train.activity DROP COLUMN file;
+
+ALTER TABLE dynamic MODIFY COLUMN `clock_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '评论/打卡时间';
+
+ALTER TABLE dynamic ADD COLUMN `useful` varchar(2) NOT NULL DEFAULT '0' COMMENT '是否有效0=否，1=是';
 
 ```
