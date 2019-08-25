@@ -58,17 +58,17 @@ CREATE TABLE `dynamic_file` (
 
 CREATE TABLE `member_credit_log` (
   `credit_log_id` varchar(20) NOT NULL COMMENT '积分记录ID',
-	`member_id` varchar(20) NOT NULL COMMENT '白名单会员ID',
-	`activity_id` varchar(20) NOT NULL COMMENT '活动id',
+  `member_id` varchar(20) NOT NULL COMMENT '白名单会员ID',
+  `activity_id` varchar(20) NOT NULL COMMENT '活动id',
   `object_id` varchar(20) NOT NULL COMMENT '获取积分项ID',
-	`Object_type` varchar(5) NOT NULL COMMENT '获取积分项类型（CreditLogObjectTypeEnum）',
+  `object_type` varchar(5) NOT NULL COMMENT '获取积分项类型（CreditLogObjectTypeEnum）',
   `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
   `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
   `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
   `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`credit_log_id`),
-	KEY `member_id_index` (`member_id`) USING BTREE
+  KEY `member_id_index` (`member_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='会员获取积分记录表';
 
 ```
