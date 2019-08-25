@@ -96,3 +96,27 @@ ALTER TABLE dynamic DROP COLUMN `image`;
 ALTER TABLE dynamic DROP COLUMN `audio`;
 
 ```
+
+```sql
+SELECT wl.username,wl.phone
+FROM member_credit_log mcl 
+LEFT JOIN activity a ON a.id = mcl.activity_id 
+LEFT JOIN white_list wl ON wl.id = mcl.member_id 
+WHERE mcl.del_flag = '1' AND a.del_flag = '1' AND wl.del_flag = '1' 
+GROUP BY wcl.member_id,wcl.activity_id 
+ORDER BY mcl.member_id,
+
+
+SELECT mcl.member_id,mcl.date,IFNULL(mcl.count_code * a.credit,0) msu_creadit,wl.username,wl.phone
+FROM (
+	SELECT member_id,activity_id,DATE_FORMAT(create_date,'%Y-%m') date,count(activity_id) count_code
+	FROM member_credit_log 
+	
+	WHERE del_flag = '1'
+	GROUP BY member_id,activity_id,DATE_FORMAT(create_date,'%Y-%m') 
+) mcl
+LEFT JOIN activity a ON a.id = mcl.activity_id AND a.del_flag = '1'
+LEFT JOIN white_list wl ON wl.id = mcl.member_id AND wl.del_flag = '1' 
+WHERE 1=1 
+GROUP BY mcl.member_id,mcl.date;
+```
