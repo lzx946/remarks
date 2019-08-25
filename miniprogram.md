@@ -48,6 +48,7 @@ CREATE TABLE `dynamic_file` (
   `file_name` varchar(50) DEFAULT NULL COMMENT '文件名',
   `url` varchar(255) NOT NULL COMMENT '文件url',
   `file_type` varchar(5) NOT NULL COMMENT '文件类型，（DynamicFileTypeEnum）',
+  `duration` varchar(20) DEFAULT NULL COMMENT '时长（音频）',
   `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
   `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
   `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
