@@ -78,13 +78,23 @@ CREATE TABLE `activity_member` (
   `activity_id` varchar(20) NOT NULL COMMENT '活动id',
   `member_id` varchar(20) NOT NULL COMMENT '会员id',
   `is_must` char(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除用（置0）',
-  `standard_flag` varchar(2) NOT NULL DEFAULT '0' COMMENT '是否达标0=否，1=是',
   `del_flag` char(1) NOT NULL,
   `create_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
   `create_id` varchar(20) DEFAULT NULL COMMENT '创建人ID',
   `modify_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动会员对应表';
+
+CREATE TABLE `activity_member_check` (
+  `id` varchar(20) NOT NULL COMMENT '活动会员考核表id',
+  `activity_member_id` varchar(20) NOT NULL COMMENT 'activity_member表id',
+  `standard_flag` varchar(2) NOT NULL DEFAULT '0' COMMENT '是否达标0=否，1=是',
+  `del_flag` char(1) NOT NULL,
+  `create_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_id` varchar(20) DEFAULT NULL COMMENT '创建人ID',
+  `modify_time` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动会员考核表';
 
 ```
 
