@@ -79,10 +79,11 @@ CREATE TABLE `activity_member` (
   `member_id` varchar(20) NOT NULL COMMENT '会员id',
   `is_must` char(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除用（置0）',
   `del_flag` char(1) NOT NULL,
-  `create_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `create_id` varchar(20) DEFAULT NULL COMMENT '创建人ID',
-  `modify_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
-  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID'
+  `modify_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动会员对应表';
 
 CREATE TABLE `activity_member_check` (
