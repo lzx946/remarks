@@ -63,6 +63,7 @@ CREATE TABLE `member_credit_log` (
   `activity_id` varchar(20) NOT NULL COMMENT '活动id',
   `object_id` varchar(20) NOT NULL COMMENT '获取积分项ID',
   `object_type` varchar(5) NOT NULL COMMENT '获取积分项类型（CreditLogObjectTypeEnum）',
+  `credit` int(11) NOT NULL DEFAULT '0' COMMENT '获得积分',
   `del_flag` varchar(1) NOT NULL DEFAULT '1' COMMENT '逻辑删除（置0）',
   `create_id` varchar(20) NOT NULL COMMENT '创建人ID',
   `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
