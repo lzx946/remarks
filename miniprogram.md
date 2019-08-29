@@ -87,6 +87,19 @@ CREATE TABLE `activity_member` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动会员对应表';
 
+CREATE TABLE `member_step` (
+  `id` varchar(20) NOT NULL COMMENT '会员步数表id',
+  `member_id` varchar(20) NOT NULL COMMENT '会员id',
+	`steps` int(11) NOT NULL DEFAULT 0 COMMENT '步数',
+	`clock_date` timestamp NOT NULL COMMENT '获取步数时间',
+  `del_flag` char(1) NOT NULL,
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_id` varchar(20) DEFAULT NULL COMMENT '创建人ID',
+  `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `modify_id` varchar(20) DEFAULT NULL COMMENT '修改人ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='会员步数表';
+
 CREATE TABLE `activity_member_check` (
   `check_id` varchar(20) NOT NULL COMMENT '活动会员考核表id',
   `activity_member_id` varchar(20) NOT NULL COMMENT 'activity_member表id',
