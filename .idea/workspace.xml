@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d754eddd-4392-4a62-b3d4-bad3756550e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/中家联/甲醛订单" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,6 +139,7 @@
       <workItem from="1573034328308" duration="1248000" />
       <workItem from="1573191961600" duration="187000" />
       <workItem from="1573192407204" duration="908000" />
+      <workItem from="1573193373553" duration="629000" />
     </task>
     <servers />
   </component>

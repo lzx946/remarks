@@ -1,9 +1,9 @@
 ## 取消规则添加字段
 
 ```sql
-ALTER TABLE `t_goods_cancel_rule` ADD COLUMN `cut_type` varchar(20) NOT NULL COMMENT '扣款方式' AFTER `cancel_days_end`;
+ALTER TABLE `t_goods_book_rule` ADD COLUMN `cut_type` varchar(20) NOT NULL COMMENT '扣款方式' AFTER `book_days`;
 
-UPDATE `t_goods_cancel_rule` SET cut_type = 'percent';
+UPDATE `t_goods_book_rule` SET cut_type = 'percent';
 
 ALTER TABLE `t_goods_cancel_rule` MODIFY COLUMN `cut_point` int(8) DEFAULT NULL COMMENT '取消扣费百分比/金额';
 
