@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d754eddd-4392-4a62-b3d4-bad3756550e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/中家联/甲醛订单" beforeDir="false" afterPath="$PROJECT_DIR$/中家联/甲醛订单" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560426088575" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../96365/server_user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -139,7 +140,8 @@
       <workItem from="1573034328308" duration="1248000" />
       <workItem from="1573191961600" duration="187000" />
       <workItem from="1573192407204" duration="908000" />
-      <workItem from="1573193373553" duration="629000" />
+      <workItem from="1573193373553" duration="1502000" />
+      <workItem from="1573455695249" duration="919000" />
     </task>
     <servers />
   </component>
