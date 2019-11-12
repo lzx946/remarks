@@ -14,4 +14,5 @@ ALTER TABLE `t_goods_cancel_rule` MODIFY COLUMN `cut_point` int(8) DEFAULT NULL 
 ```sql
 ALTER TABLE mall_goods_sku ADD COLUMN `supplement_square_price` int(10) DEFAULT NULL COMMENT '补平方订单每平方价格' AFTER supplement_price;
 ALTER TABLE mall_goods_sku ADD COLUMN `auto_dispatch` varchar(1) DEFAULT NULL COMMENT '是否可以自动排单1=是0=否';
+ALTER TABLE mall_goods_sku ADD COLUMN `server_date_flag` varchar(1) DEFAULT '1' COMMENT '客户端是否可以选择服务日期和时间1=是0=否';
 ```
