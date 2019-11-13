@@ -23,3 +23,11 @@ ALTER TABLE mall_goods_sku ADD COLUMN `server_date_flag` varchar(1) DEFAULT '1' 
 ALTER TABLE goods_order ADD COLUMN `supplement_square_price` int(10) DEFAULT NULL COMMENT '补平方订单每平方价格';
 ALTER TABLE goods_order ADD COLUMN `allow_pay_type` char(1) DEFAULT '2' COMMENT '允许使用的支付方式0-先付后服务，1-先服务后付，2-两种模式均可';
 ```
+
+
+## order_main添加字段
+
+```sql
+ALTER TABLE order_main ADD COLUMN `square` int(8) DEFAULT NULL COMMENT '补平方差价订单服务面积';
+ALTER TABLE order_main ADD COLUMN `supplement_square_date` TIMESTAMP NULL DEFAULT NULL COMMENT '补平方差价订单收款时间';
+```
