@@ -34,4 +34,7 @@ ALTER TABLE goods_order ADD COLUMN `allow_pay_type` char(1) DEFAULT '2' COMMENT 
 ```sql
 ALTER TABLE order_main ADD COLUMN `square` int(8) DEFAULT NULL COMMENT '补平方差价订单服务面积';
 ALTER TABLE order_main ADD COLUMN `supplement_square_date` TIMESTAMP NULL DEFAULT NULL COMMENT '补平方差价订单收款时间';
+
+ALTER TABLE order_main ADD COLUMN expect_date date DEFAULT NULL COMMENT '客户选择期望服务日期';
+
 ```
