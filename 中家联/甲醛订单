@@ -42,6 +42,8 @@ ALTER TABLE order_main ADD COLUMN expect_date date DEFAULT NULL COMMENT '客户�
 ## 添加权限
 
 ```sql
-INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (869, '后置付费订单', '1', 100, 2, ',0,2,', 2, 'zjl.order.rearpay', '', '2019-11-16 16:48:44', '199517112614518784', '2019-11-16 16:55:28', '199517112614518784');
-INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (870, '后置付费订单列表', '2', 2, 869, ',0,2,869,', 3, 'zjl.order.rearpay', '/admin/zjl/virtualOrder/supplementSquare/list', '2019-11-16 16:53:14', '199517112614518784', '2019-11-16 16:53:14', '199517112614518784');
+INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (869, '后置付费订单', '1', 100, 2, ',0,2,', 2, 'zjl.order.supplementSquare', '', '2019-11-16 16:48:44', '199517112614518784', '2019-11-16 16:55:28', '199517112614518784');
+INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (870, '后置付费订单列表', '2', 2, 869, ',0,2,869,', 3, 'zjl.order.supplementSquare.list', '/admin/zjl/virtualOrder/supplementSquare/list', '2019-11-16 16:53:14', '199517112614518784', '2019-11-16 16:53:14', '199517112614518784');
+
+
 ```
