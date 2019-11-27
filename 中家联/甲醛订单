@@ -47,3 +47,10 @@ INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`
 
 
 ```
+
+## service_info
+
+```sql
+INSERT INTO `service_info`(`ID`, `CODE`, `NAME`, `PARENT_ID`, `LEVEL_TYPE`, `TOTAL_LEVEL`, `TREE_PATH`, `SORT`, `ORG_ID`, `REMARK`, `DEL_FLAG`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (68, 'buchajia-square', '补差价（平方）', 57, '1', '2', ',57,', 1, 14, NULL, '1', '2019-11-27 14:26:25', NULL, NULL, NULL);
+
+```
