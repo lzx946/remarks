@@ -54,3 +54,41 @@ INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`
 INSERT INTO `service_info`(`ID`, `CODE`, `NAME`, `PARENT_ID`, `LEVEL_TYPE`, `TOTAL_LEVEL`, `TREE_PATH`, `SORT`, `ORG_ID`, `REMARK`, `DEL_FLAG`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (68, 'buchajia-square', '补差价（平方）', 57, '1', '2', ',57,', 1, 14, NULL, '1', '2019-11-27 14:26:25', NULL, NULL, NULL);
 
 ```
+
+
+
+# 同步数据库
+
+```sql
+ALTER TABLE `t_goods_book_rule` ADD COLUMN `cut_type` varchar(20) NOT NULL COMMENT '扣款方式' AFTER `book_days`;
+
+UPDATE `t_goods_book_rule` SET cut_type = 'percent';
+
+ALTER TABLE `t_goods_cancel_rule` MODIFY COLUMN `cut_point` int(8) DEFAULT NULL COMMENT '取消扣费百分比/金额';
+
+ALTER TABLE mall_goods_sku ADD COLUMN `supplement_square_price` int(10) DEFAULT NULL COMMENT '补平方订单每平方价格' AFTER supplement_price;
+ALTER TABLE mall_goods_sku ADD COLUMN `auto_dispatch` varchar(1) DEFAULT NULL COMMENT '是否可以自动排单1=是0=否';
+ALTER TABLE mall_goods_sku ADD COLUMN `server_date_flag` varchar(1) DEFAULT '1' COMMENT '客户端是否可以选择服务日期和时间1=是0=否';
+
+ALTER TABLE mall_goods_sku MODIFY COLUMN `server_date_flag` varchar(10) DEFAULT NULL COMMENT '客户端选择(服务/期望)日期和时间server=服务，expect=期望';
+UPDATE mall_goods_sku SET server_date_flag = 'server';
+
+ALTER TABLE goods_order ADD COLUMN `supplement_square_price` int(10) DEFAULT NULL COMMENT '补平方订单每平方价格';
+ALTER TABLE goods_order ADD COLUMN `allow_pay_type` char(1) DEFAULT '2' COMMENT '允许使用的支付方式0-先付后服务，1-先服务后付，2-两种模式均可';
+
+ALTER TABLE order_main ADD COLUMN `square` int(8) DEFAULT NULL COMMENT '补平方差价订单服务面积';
+ALTER TABLE order_main ADD COLUMN `supplement_square_date` TIMESTAMP NULL DEFAULT NULL COMMENT '补平方差价订单收款时间';
+
+ALTER TABLE order_main ADD COLUMN expect_date date DEFAULT NULL COMMENT '客户选择期望服务日期';
+
+INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (869, '后置付费订单', '1', 100, 2, ',0,2,', 2, 'zjl.order.supplementSquare', '', '2019-11-16 16:48:44', '199517112614518784', '2019-11-16 16:55:28', '199517112614518784');
+INSERT INTO `t_function_info`(`FUNCTION_ID`, `FUNCTION_NAME`, `TYPE`, `PRIORITY`, `PARENT_ID`, `PARENT_IDS`, `LEVEL`, `PERMISSION`, `URL`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (870, '后置付费订单列表', '2', 2, 869, ',0,2,869,', 3, 'zjl.order.supplementSquare.list', '/admin/zjl/virtualOrder/supplementSquare/list', '2019-11-16 16:53:14', '199517112614518784', '2019-11-16 16:53:14', '199517112614518784');
+
+INSERT INTO `service_info`(`ID`, `CODE`, `NAME`, `PARENT_ID`, `LEVEL_TYPE`, `TOTAL_LEVEL`, `TREE_PATH`, `SORT`, `ORG_ID`, `REMARK`, `DEL_FLAG`, `CREATE_DATE`, `CREATE_ID`, `MODIFY_DATE`, `MODIFY_ID`) VALUES (68, 'buchajia-square', '补差价（平方）', 57, '1', '2', ',57,', 1, 14, NULL, '1', '2019-11-27 14:26:25', NULL, NULL, NULL);
+
+
+
+alter table `nursing_basicdata_hospital` add `hospital_code_url` varchar(255) NOT NULL DEFAULT '' COMMENT '医院二维码URL';
+
+
+```
