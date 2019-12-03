@@ -91,4 +91,8 @@ INSERT INTO `service_info`(`ID`, `CODE`, `NAME`, `PARENT_ID`, `LEVEL_TYPE`, `TOT
 alter table `nursing_basicdata_hospital` add `hospital_code_url` varchar(255) NOT NULL DEFAULT '' COMMENT '医院二维码URL';
 
 
+update goods_order go 
+left join mall_goods_sku msk on go.sku_id = msk.sku_id 
+set go.allow_pay_type = msk.allow_pay_type;
+
 ```
