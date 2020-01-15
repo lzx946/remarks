@@ -96,3 +96,14 @@ left join mall_goods_sku msk on go.sku_id = msk.sku_id
 set go.allow_pay_type = msk.allow_pay_type;
 
 ```
+
+# 线上问题，修改甲醛订单状态和支付详情
+```sql
+
+UPDATE 3t_prod.order_main SET ORDER_STATUS = 5 WHERE ORDER_ID = '401680745795420160';
+
+UPDATE 3t_prod.order_payment SET PAY_STATUS = 5,CASH_AMOUNT = 600000,ACTUAL_AMOUNT = 600000,THIRD_PARTY_PAY_TYPE = 0,PAY_DATE = NOW() WHERE ORDER_ID = '401680745795420160';
+
+UPDATE 3t_prod.order_payment SET COUPON_AMOUNT = 50000 WHERE ORDER_ID = '401680745795420160';
+
+```
