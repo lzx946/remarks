@@ -44,4 +44,8 @@ WHERE XKJYXM LIKE '%普通货运%'
 	 OR XKJYXM LIKE '%水箱清洗%'
 	 OR XKJYXM LIKE '%家电维修%';
 
+
+SELECT * FROM SWJ_V_SCJGJ_QYHZNR WHERE JYFW LIKE '%家政%';
+
+
 ```
