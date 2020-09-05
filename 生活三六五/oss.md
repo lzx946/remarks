@@ -17,8 +17,9 @@ CREATE TABLE `file_mapping` (
 CREATE TABLE `file_transfer_log` (
   `log_id` varchar(20) NOT NULL,
   `table_name` varchar(50) NOT NULL COMMENT '迁移的表名',
-  `column_id` varchar(50) NOT NULL COMMENT '主键字段名',
-  `column_url` varchar(50) NOT NULL COMMENT '文件路径字段名',
+  `column_id_name` varchar(50) NOT NULL COMMENT '主键字段名',
+  `column_id_value` varchar(20) NOT NULL COMMENT '主键字段值',
+  `column_url_name` varchar(50) NOT NULL COMMENT '文件路径字段名',
   `original_file_key` varchar(255) NOT NULL COMMENT '原来的key（ftp文件路径）',
   `new_file_key` varchar(255) DEFAULT NULL COMMENT '新文件key（oss文件路径）',
   `file_id` varchar(20) DEFAULT NULL COMMENT '文件ID，关联file_mapping表的file_id',
