@@ -30,4 +30,23 @@ CREATE TABLE `file_transfer_log` (
   `modify_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`log_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文件迁移日志表';
+
 ```
+
+## 需要替换的接口
+
+|原接口|现接口|
+|:---:|:---:|
+|/mall/main/addImage/{source}|/mall/file/upload/{source}|
+|/mall/main/addVideo/{source}|/mall/file/upload/{source}|
+|/mall/main/addImage2/{source}|/mall/file/upload/{source}|
+|/mall/main/addXls|/mall/file/upload/54|
+|/order/orderAppEmp/addMp3|/mall/file/upload/52|
+|/order/eContract/uploadContractTemplate|/mall/file/upload/51|
+|/user/memberInfo/updateHeadImage|/mall/file/upload/50|
+ 
+ 
+## 需要确认接口还有用吗
+
+/mall/empCredit/getEmpIDPhotos
+/getEmpIDPhotosTest
