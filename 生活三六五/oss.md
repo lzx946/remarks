@@ -1,7 +1,7 @@
 ## 创建统一文件映射索引表
 
 ```sql
-- 文件映射关系索引表
+-- 文件映射关系索引表
 CREATE TABLE `file_mapping` (
   `file_id` varchar(20) NOT NULL,
   `file_key` varchar(255) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE `file_mapping` (
   PRIMARY KEY (`file_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文件映射关系索引表';
 
-- 文件迁移日志表
+-- 文件迁移日志表
 CREATE TABLE `file_transfer_log` (
   `log_id` varchar(20) NOT NULL,
   `table_name` varchar(50) NOT NULL COMMENT '迁移的表名',
