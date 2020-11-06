@@ -10,6 +10,7 @@ CREATE TABLE `bind_code` (
   `code_type` varchar(20) NOT NULL COMMENT 'code类型',
   `code` varchar(50) DEFAULT NULL COMMENT 'code',
   `source` varchar(50) DEFAULT NULL COMMENT '来源,域名',
+  `app_id` varchar(64) DEFAULT NULL COMMENT 'appID',
   `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modify_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
