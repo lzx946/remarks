@@ -3,6 +3,8 @@
 
 ```sql
 
+-- 已同步上线
+
 CREATE TABLE `bind_code` (
   `id` varchar(20) NOT NULL,
   `object_type` varchar(20) NOT NULL COMMENT '对象类型',
